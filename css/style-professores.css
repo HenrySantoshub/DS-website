@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background-color: black;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header .btn-contato button,
+.hero-site button {
+    border-radius: 40px;
+    border: #fff 1px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+/*HEADER*/
+
+header {
+    width: 100%;
+    padding: 40px 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 180px;
+    transition: 0.2s;
+}
+
+.logo img:hover{
+    transform: scale(1.05);
+}
+
+header .menu-desktop nav ul {
+    list-style: none;
+}
+
+header .menu-desktop nav ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header .menu-desktop nav ul li a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+    font-weight: 600;
+}
+
+.menu-desktop nav a:hover {
+    transform: scale(1.05);
+    color: #E70072;
+
+}
+
+header .btn-contato button {
+    width: 150px;
+    height: 50px;
+}
+
+header .btn-contato button:hover,
+.hero-site button:hover {
+    background-color: #E70072;
+    color: #000;
+    transition: 0.9s;
+}
+
+/*ESTILO DO HEADER*/
+
+section.hero-site {
+
+    height: 95vh;
+    background-image: url(../image/bg-inicio-Prof.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-site .interface {
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-site .txt-hero h1 {
+
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 200;
+    margin: 20px;
+
+}
+
+.hero-site .txt-hero h1 span {
+    font-weight: 600;
+    display: block;
+}
+
+.hero-site button {
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+    margin: 15px;
+}
+
+
+/*MATERIAS DE DS*/
+::selection {
+  background: #000000;
+  color: #fff;
+}
+
+.container {
+  max-width: 950px;
+  width: 100%;
+  overflow:visible;
+  padding: 80px 0;
+  margin: 0 auto; /* Centraliza a div container */
+}
+
+.container .main-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px; /* Aumenta o espaçamento entre os cartões */
+ 
+}
+
+#two:checked ~ .main-card {
+  margin-left: -100%;
+  margin-top: 50px;
+}
+
+.container .main-card .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espaçamento entre os cartões */
+  width: 100%;
+  margin-bottom: 20px; /* Espaçamento entre as linhas */
+}
+
+.main-card .cards .card {
+  width: calc(100% / 1 - 20px); /* Três cartões por linha */
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+  margin-bottom: 40px; /* Aumente o valor conforme necessário */
+  margin-right: 0;
+}
+
+.main-card .cards .card:hover {
+  transform: scale(1.05);
+
+      box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.322);
+}
+
+.cards .card .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cards .card .content .img {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #E70072;
+  margin-bottom: 14px;
+}
+
+.card .content .img img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card .content .name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card .content .job {
+  font-size: 20px;
+  color: #67004a;
+}
+
+/* Estilos para os ícones das redes sociais */
+.card .content .media-icons {
+  margin-top: 10px;
+  display: flex;
+}
+
+.media-icons a {
+  text-align: center;
+  line-height: 50px; /* Centraliza o ícone verticalmente */
+  height: 50px; /* Aumente o tamanho do círculo */
+  width: 50px;  /* Aumente o tamanho do círculo */
+  margin: 0 4px;
+  font-size: 14px;
+  color: #FFF; /* Cor padrão do ícone */
+  border-radius: 50%;
+  background: #E70072; /* Cor de fundo padrão */
+  transition: all 0.3s ease;
+}
+
+/* Estilos específicos para o LinkedIn */
+.media-icons a i {
+  color: #FFF; /* Cor padrão dos ícones */
+  font-size: 24px; /* Tamanho do ícone */
+  align-items: center;
+}
+
+.media-icons a.linkedin {
+  background-color: #0077B5; /* Cor de fundo padrão do LinkedIn */
+}
+
+.media-icons a.linkedin:hover {
+  background-color: #005582; /* Cor de fundo do LinkedIn ao passar o mouse */
+}
+
+.media-icons a.linkedin i:hover {
+  color: #00FF00; /* Cor do ícone ao passar o mouse */
+}
+
+/* Hover padrão para todos os ícones */
+.media-icons a:hover {
+  background-color: #252224; /* Cor de fundo ao passar o mouse em qualquer ícone */
+  border-color: #E70072; /* Cor da borda ao passar o mouse */
+}
+
+/* Botões de navegação */
+.container .button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.button label {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%; /* Garante que o círculo seja perfeitamente redondo */
+  background: #af005d; /* Cor do círculo */
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.button label.active {
+  width: 35px; /* Ajuste para deixar mais largo quando ativo, se necessário */
+}
+
+
+
+input[type="radio"] {
+  display: none;
+}
+
+/* Estilos de responsividade */
+@media (max-width: 768px) {
+  .main-card .cards .card {
+    width: calc(100% / 2 - 20px); /* Dois cartões por linha em telas menores */
+  }
+}
+
+@media (max-width: 600px) {
+  .main-card .cards .card {
+    width: 100%; /* Um cartão por linha em telas pequenas */
+  }
+}
